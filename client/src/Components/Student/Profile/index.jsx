@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { PageHeader, Tabs } from "antd";
 import { AppleOutlined, AndroidOutlined } from "@ant-design/icons";
 import MainDetails from "./MainDetails";
-import Address from "./Address";
 import Spinner from "../../Spinner";
 import API from "../../../api";
 
@@ -41,17 +40,6 @@ const StudentProfile = () => {
               key="1"
             >
               <MainDetails data={studentData} />
-            </TabPane>
-            <TabPane
-              tab={
-                <span>
-                  <AndroidOutlined />
-                  Address
-                </span>
-              }
-              key="3"
-            >
-              <Address data={studentData} />
             </TabPane>
           </Tabs>
         </>
